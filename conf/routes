@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+
+# ~~~ Datasets API ~~~
+GET     /api/getdata                controllers.DatasetsController.getAllDatasets
+GET     /api/getbyid/:id            controllers.DatasetsController.getDatasetById(id: String)
+POST    /api/create                controllers.DatasetsController.createDataset
+PUT     /api/update/:id            controllers.DatasetsController.updateDataset(id: String)
+DELETE  /api/delete/:id            controllers.DatasetsController.deleteDataset(id: String)
